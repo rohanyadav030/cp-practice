@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+   int n,c=0;
+   printf("Enter a number");
+   scanf("%d",&n);
+   while(n!=1)
+   {
+   	if(n%2==0)
+   	{
+   		n=n/2;
+   		c=c+1;
+	}
+	else
+	{
+		n=3*n+1;
+		c=c+1;
+	}
+   }
+   printf("Total number of steps :%d",c);
+	return 0;
+}
+/*
+************** output ***************
+Enter a number 22
+Total number of steps :15
+
+Enter a number 11
+Total number of steps :14
+
+Enter a number 55
+Total number of steps :112
+*/
